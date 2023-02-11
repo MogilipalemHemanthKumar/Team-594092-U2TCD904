@@ -249,8 +249,7 @@ if (selected == 'Crop Prediction'):
     st.markdown("<hr style=color: black;'></hr>", unsafe_allow_html=True)
 
     if st.button("Predict"):
-        st.markdown(
-            f"<br/><h5 style='background-color:green; padding: 5px 20px 5px 5px;text-align: center;color: black;'>  Recommended Crop:  {prediction([N, P, K, temperature, humidity, avg_rainfall, ph])}</h5>",
+        st.markdown(f"<br/><h5 style='background-color:green; padding: 15px 32px;;text-align: center;color: black;'>  Recommended Crop:  {prediction([N, P, K, temperature, humidity, avg_rainfall, ph])}</h5>",
             unsafe_allow_html=True)
         
 if (selected == 'Fertilizer Prediction'):
@@ -330,10 +329,8 @@ if (selected == 'Fertilizer Prediction'):
     soil=int(res2[so])
     st.markdown("<hr style=color: black;'></hr>", unsafe_allow_html=True)
     if st.button("Predict"):
-        '''st.markdown(
-            f"<br/><h5 style='background-color:green; padding: 5px 5px 5px 5px;text-align: center;color: black;'>  Recommended Fertilizer:  {prediction([temperature,humidity,moisture,soil,crop,N,P,K])}</h5>",
-            unsafe_allow_html=True)'''
-        st.success(f"Recommended Fertilizer:  {prediction([temperature,humidity,moisture,soil,crop,N,P,K])}")
+        st.markdown(f"<h5 style='background-color:green; padding: 15px 32px;;text-align: center;color: black;'>  Recommended Fertilizer:  {prediction([temperature,humidity,moisture,soil,crop,N,P,K])}</h5>",
+            unsafe_allow_html=True)
 
 
 if (selected == 'Suggesting Crops'):
