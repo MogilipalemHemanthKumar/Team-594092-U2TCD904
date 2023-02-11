@@ -249,7 +249,7 @@ if (selected == 'Crop Prediction'):
     st.markdown("<hr style=color: black;'></hr>", unsafe_allow_html=True)
 
     if st.button("Predict"):
-        st.markdown(f"<br/><h6 style='text-align: center; color: black;'>  Recommended Crop:  {prediction([N, P, K, temperature, humidity, avg_rainfall, ph])}</h6>",
+        st.markdown(f"<h6 style='text-align: center; color: black;'>  Recommended Crop:  {prediction([N, P, K, temperature, humidity, avg_rainfall, ph])}</h6>",
             unsafe_allow_html=True)
         
 if (selected == 'Fertilizer Prediction'):
