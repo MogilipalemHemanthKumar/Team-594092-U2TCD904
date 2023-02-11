@@ -249,10 +249,10 @@ if (selected == 'Crop Prediction'):
     st.markdown("<hr style=color: black;'></hr>", unsafe_allow_html=True)
 
     if st.button("Predict"):
-        '''st.markdown(
-            f"<br/><h5 style='background-color:green; padding: 5px 5px 5px 5px;text-align: center;color: black;'>  Recommended Crop:  {prediction([N, P, K, temperature, humidity, avg_rainfall, ph])}</h5>",
-            unsafe_allow_html=True)'''
-        st.success(f"Recommended Crop:  {prediction([N, P, K, temperature, humidity, avg_rainfall, ph])}")
+        st.markdown(
+            f"<br/><h5 style='background-color:green; padding: 5px 20px 5px 5px;text-align: center;color: black;'>  Recommended Crop:  {prediction([N, P, K, temperature, humidity, avg_rainfall, ph])}</h5>",
+            unsafe_allow_html=True)
+        
 if (selected == 'Fertilizer Prediction'):
     st.title("Fertilizer Prediction")
     st.markdown("<hr style=color: black;'></hr>", unsafe_allow_html=True)
